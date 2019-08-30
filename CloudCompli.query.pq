@@ -1,18 +1,19 @@
 ﻿// Use this file to write queries to test your data connector
 let
 
-    connection = [
-        Instance="INSTANCE.compli.cloud",
-        Token="TOKEN"
-    ],
+    //connection = [
+    //    Instance="INSTANCE.compli.cloud",
+    //    Token="TOKEN"
+    //],
 
-    result = CloudCompli.GetApiToken([
-        Instance = "INSTANCE.compli.cloud",
-        ClientId = "CLIENT_ID",
-        ClientSecret = "CLIENT_SECRET"
-    ])
+    //result = CloudCompli.GetApiToken([
+    //    Instance = "INSTANCE.compli.cloud",
+    //    ClientId = "CLIENT_ID",
+    //    ClientSecret = "CLIENT_SECRET"
+    //])
 
-
+    
+    result = CloudCompli.GetDataset("Programs")
     //result = CloudCompli.GetDataset("Constituents")
     //result = CloudCompli.GetDataset("ProgramLocations", "{""program"":""construction""}")
     //result = CloudCompli.GetDataset("ProgramLocations", "{""program"":""construction"", ""MaxQueries"":2,""RecordsPerQuery"":100}")
