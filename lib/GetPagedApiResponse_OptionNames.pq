@@ -1,0 +1,5 @@
+﻿{
+    "MaxQueries",
+    "RecordsPerQuery",
+    "ErrorOnAdditionalRecords"
+}

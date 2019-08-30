@@ -1,0 +1,17 @@
+﻿{
+    "county",
+    "counties",
+    "facility_county",
+    "facility_counties",
+    "facility_city",
+    "facility_cities",
+    "receiving_water_name",
+    "receiving_water_names",
+    "wdid",
+    "wdids",
+    "sic",
+    "sics",
+    "latitude",
+    "longitude",
+    "distance"
+}
