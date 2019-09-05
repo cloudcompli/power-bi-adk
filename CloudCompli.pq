@@ -127,6 +127,8 @@ shared CloudCompli.GetCaswrcbIndustrialFacilitiesReceivingWaters = (Connection)
 shared CloudCompli.GetCaswrcbWastewaterFacilityPermits = (Connection, optional options) 
     => "#lib(GetCaswrcbWastewaterFacilityPermits)"(Connection, options);
 
+shared CloudCompli.GetCaswrcbWastewaterFacilityPermitsAttribute = "#lib(GetCaswrcbWastewaterFacilityPermitsAttribute)";
+
 shared CloudCompli.GetCaswrcbWastewaterFacilityPermitsTable = (Connection, optional options) 
     => "#lib(GetCaswrcbWastewaterFacilityPermitsTable)"(Connection, options);
 
