@@ -492,6 +492,13 @@ CloudCompli = [
 
 CloudCompli.Publish = [
     Beta = true,
-    Category = "Other",
-    ButtonText = { "CloudCompli", "Provides connectivity with CloudCompli through its API" }
+    Category = "Online Services",
+    ButtonText = { "CloudCompli", "Provides connectivity with CloudCompli through its API." },
+    SourceImage = CloudCompli.Icons,
+    SourceTypeImage = CloudCompli.Icons
+];
+
+CloudCompli.Icons = [
+    Icon16 = { Extension.Contents("CloudCompli16.png"), Extension.Contents("CloudCompli20.png"), Extension.Contents("CloudCompli24.png"), Extension.Contents("CloudCompli32.png") },
+    Icon32 = { Extension.Contents("CloudCompli32.png"), Extension.Contents("CloudCompli40.png"), Extension.Contents("CloudCompli48.png"), Extension.Contents("CloudCompli64.png") }
 ];
