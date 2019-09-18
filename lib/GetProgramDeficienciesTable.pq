@@ -8,6 +8,7 @@
         "id",
         "location_id",
         "created_at",
+        "deficiency_level_id",
         "name",
         "description",
         "due_by",
