@@ -159,6 +159,9 @@
     <Content Include="lib\GetLocationTagsTable.pq">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="lib\GetLocationTags_QueryOptionNames.pq">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="lib\GetMonitoringLocations.pq">
       <SubType>Content</SubType>
     </Content>

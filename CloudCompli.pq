@@ -223,9 +223,11 @@ shared CloudCompli.GetInvestigations = (Connection, optional options)
 shared CloudCompli.GetInvestigationsTable = (Connection, optional options) 
     => "#lib(GetInvestigationsTable)"(Connection, options);
 
-shared CloudCompli.GetLocationTags = "#lib(GetLocationTags)";
+shared CloudCompli.GetLocationTags = (Connection, optional options) 
+    => "#lib(GetLocationTags)"(Connection, options);
 
-shared CloudCompli.GetLocationTagsTable = "#lib(GetLocationTagsTable)";
+shared CloudCompli.GetLocationTagsTable = (Connection, optional options) 
+    => "#lib(GetLocationTagsTable)"(Connection, options);
 
 shared CloudCompli.GetMonitoringLocations = "#lib(GetMonitoringLocations)";
 
@@ -301,6 +303,18 @@ shared CloudCompli.GetWeatherHydstraObsStations = "#lib(GetWeatherHydstraObsStat
 
 shared CloudCompli.GetWeatherHydstraObsStationsTable = "#lib(GetWeatherHydstraObsStationsTable)";
 
+shared CloudCompli.Lib.GetApiResponse = "#lib(GetApiResponse)";
+
+shared CloudCompli.Lib.GetPagedApiResponse = "#lib(GetPagedApiResponse)";
+
+shared CloudCompli.Lib.Record.MapFields = "#lib(Record_MapFields)";
+
+shared CloudCompli.Lib.Record.SelectFieldsWhereExists = "#lib(Record_SelectFieldsWhereExists)";
+
+shared CloudCompli.Lib.TransformPointColumnToCoordinatesColumns = "#lib(TransformPointColumnToCoordinatesColumns)";
+
+shared CloudCompli.Lib.TransformRecordsToTable = "#lib(TransformRecordsToTable)";
+
 /**
  * Published datasets when a user select the CloudCompli data product from Get Data > CloudCompli.
  */
@@ -335,7 +349,7 @@ Datasets = [
     IndustrialDeficiencies = (optional options) => CloudCompli.GetIndustrialDeficienciesTable(Connection, options),
     IndustrialLocations = (optional options) => CloudCompli.GetIndustrialLocationsTable(Connection, options),
     Investigations = (optional options) => CloudCompli.GetInvestigationsTable(Connection, options),
-    LocationTags = () => CloudCompli.GetLocationTagsTable(Connection),
+    LocationTags = (optional options) => CloudCompli.GetLocationTagsTable(Connection, options),
     MonitoringLocations = () => CloudCompli.GetMonitoringLocationsTable(Connection),
     MonitoringRecords = (optional options) => CloudCompli.GetMonitoringRecordsTable(Connection, options),
     MunicipalFixedAssetDeficiencies = (optional options) => CloudCompli.GetMunicipalFixedAssetDeficienciesTable(Connection, options),

@@ -1,3 +1,19 @@
-﻿(Connection as record) =>
+﻿(
+    Connection as record,
+    optional options as record
+) =>
 
-    "#lib(GetApiResponse)"(Connection, "locations-tags")
+    let 
+
+        query = "#lib(Record_MapFields)"(
+            "#lib(Record_SelectFieldsWhereExists)"(options, "#lib(GetLocationTags_QueryOptionNames)"),
+            "#lib(Text_FromAny)"
+        )
+
+    in
+
+    "#lib(GetApiResponse)"(
+        Connection, 
+        "locations-tags",
+        [ Query = query ]
+    )
