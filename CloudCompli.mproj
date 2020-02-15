@@ -183,6 +183,12 @@
     <Content Include="lib\GetPagedApiResponse_OptionNames.pq">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="lib\GetProgramCurrentBmpIneffectivenessScores.pq">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="lib\GetProgramCurrentBmpIneffectivenessScoresTable.pq">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="lib\GetProgramDeficiencies.pq">
       <SubType>Content</SubType>
     </Content>

@@ -163,6 +163,12 @@ shared CloudCompli.GetConstituents = "#lib(GetConstituents)";
 
 shared CloudCompli.GetConstituentsTable = "#lib(GetConstituentsTable)";
 
+shared CloudCompli.GetConstructionCurrentBmpIneffectivenessScores = (Connection, optional options) 
+    => "#lib(GetProgramCurrentBmpIneffectivenessScores)"(Connection, "construction", options);
+
+shared CloudCompli.GetConstructionCurrentBmpIneffectivenessScoresTable = (Connection, optional options) 
+    => "#lib(GetProgramCurrentBmpIneffectivenessScoresTable)"(Connection, "construction", options);
+
 shared CloudCompli.GetConstructionDeficiencies = (Connection, optional options) 
     => "#lib(GetProgramDeficiencies)"(Connection, "construction", options);
 
@@ -338,6 +344,7 @@ Datasets = [
     CaswrcbWastewaterFacilityPermitsPretreatmentCodes = () => CloudCompli.GetCaswrcbWastewaterFacilityPermitsPretreatmentCodes(Connection),
     CaswrcbWastewaterFacilityPermitsReclamationCodes = () => CloudCompli.GetCaswrcbWastewaterFacilityPermitsReclamationCodes(Connection),
     Constituents = () => CloudCompli.GetConstituentsTable(Connection),
+    ConstructionCurrentBmpIneffectivenessScores = (optional options) => CloudCompli.GetConstructionCurrentBmpIneffectivenessScoresTable(Connection, options),
     ConstructionDeficiencies = (optional options) => CloudCompli.GetConstructionDeficienciesTable(Connection, options),
     ConstructionLocations = (optional options) => CloudCompli.GetConstructionLocationsTable(Connection, options),
     DeficiencyLevels = () => CloudCompli.GetDeficiencyLevelsTable(Connection),
@@ -390,6 +397,7 @@ DatasetsLabels = [
     CaswrcbWastewaterFacilityPermitsFeeCodes = "CASWRCB Wastewater Facility Permits - Fee Codes",
     CaswrcbWastewaterFacilityPermitsPretreatmentCodes = "CASWRCB Wastewater Facility Permits - Pretreatment Codes",
     CaswrcbWastewaterFacilityPermitsReclamationCodes = "CASWRCB Wastewater Facility Permits - Reclamation Codes",
+    ConstructionCurrentBmpIneffectivenessScores = "Construction BMP Ineffectiveness Scores (Current)",
     ConstructionDeficiencies = "Construction Deficiencies",
     ConstructionLocations = "Construction Locations",
     DeficiencyLevels = "Deficiency Levels",
