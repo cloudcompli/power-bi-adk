@@ -26,7 +26,7 @@
             "tag_ids",
             "bmp_effectiveness",
             ProgramLocationTypeColName,
-            ProgramLocationColName,
+            ProgramLocationColName
         }
     in
         Table.TransformColumns(
