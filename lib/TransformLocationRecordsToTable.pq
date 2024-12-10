@@ -24,9 +24,9 @@
             "location_status_id",
             "location_status_name",
             "tag_ids",
+            "bmp_effectiveness",
             ProgramLocationTypeColName,
             ProgramLocationColName,
-            bmp_effectiveness
         }
     in
         Table.TransformColumns(
